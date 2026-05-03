@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="vertical"
+ android:gravity="center"
+ android:padding="32dp"
+ android:background="#1565C0">
+ <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="ShareLink"
+ android:textSize="36sp"
+ android:textStyle="bold"
+ android:textColor="#FFFFFF"
+ android:layout_marginBottom="6dp"/>
+ <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Partage de fichiers Wi-Fi"
+ android:textSize="14sp"
+ android:textColor="#BBDEFB"
+ android:layout_marginBottom="40dp"/>
+ <TextView
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:text="Choisissez un nom pour cet appareil :"
+ android:textSize="13sp"
+ android:textColor="#E3F2FD"
+ android:layout_marginBottom="10dp"/>
+ <EditText
+ android:id="@+id/etDeviceName"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:hint="Ex: MON-TELEPHONE"
+ android:inputType="textCapCharacters|textNoSuggestions"
+ android:background="#FFFFFF"
+ android:padding="14dp"
+ android:textSize="16sp"
+ android:maxLength="20"
+ android:layout_marginBottom="20dp"/>
+ <Button
+ android:id="@+id/btnConfirm"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:text="Confirmer et demarrer"
+ android:textSize="16sp"
+ android:padding="14dp"
+ android:backgroundTint="#FFA000"
+ android:textColor="#FFFFFF"/>
+</LinearLayout>
