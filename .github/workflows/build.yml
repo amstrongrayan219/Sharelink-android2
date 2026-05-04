@@ -16,7 +16,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - uses: android-actions/setup-android@v3
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: 'build-tools;34.0.0 platforms;android-34'
 
       - name: Install Gradle 8.6
         run: |
@@ -26,6 +29,8 @@ jobs:
 
       - name: Build APK
         run: gradle assembleDebug
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
 
       - uses: actions/upload-artifact@v4
         with:
