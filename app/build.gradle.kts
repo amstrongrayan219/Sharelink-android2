@@ -1,7 +1,6 @@
-plugins {
-    id("com.android.application")
-    id("kotlin-android")
-}
+apply(plugin = "com.android.application")
+apply(plugin = "kotlin-android")
+
 android {
     namespace = "com.sharelink.app"
     compileSdk = 34
@@ -25,6 +24,7 @@ android {
         jvmTarget = "1.8"
     }
 }
+
 dependencies {
     implementation("org.nanohttpd:nanohttpd:2.3.1")
     implementation("androidx.core:core-ktx:1.13.1")
