@@ -1,6 +1,4 @@
 
- id("com.android.application")
- id("org.jetbrains.kotlin.android")
 apply(plugin = "com.android.application")
 apply(plugin = "kotlin-android")
 
