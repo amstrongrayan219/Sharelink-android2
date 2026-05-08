@@ -1,16 +1,24 @@
-apply(plugin = "com.android.application")
-apply(plugin = "kotlin-android")
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
 
 android {
     namespace = "com.sharelink.app"
     compileSdk = 34
+
     defaultConfig {
         applicationId = "com.sharelink.app"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
+
+        ndk {
+            abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
+        }
     }
+
     buildTypes {
         release {
             isMinifyEnabled = false
